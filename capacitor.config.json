@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "tabla_didactica_idiomas",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
