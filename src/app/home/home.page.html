@@ -1,20 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Tabla de idiomas</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content [fullscreen]="true" >
+<div style="background-color: #9E5084;">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="container" >
+    <ul>
+      <li>
+        <button (click)='idioma("espanol")'> <img src="./../../assets/idiomas/espana.png"  width="100px"></button>
+      </li>
+      <li>
+        <button (click)='idioma("portugues")'> <img src="./../../assets/idiomas/portugal.png"  
+            width="100px"></button>
+      </li>
+      <li>
+        <button (click)='idioma("ingles")'> <img src="./../../assets/idiomas/reino-unido.png"  
+            width="100px"></button>
+      </li>
+    </ul>
   </div>
+</div>
 </ion-content>

@@ -1,6 +1,6 @@
 {
 	"appId": "io.tablaidiomas.start",
-	"appName": "tabla_didactica_idiomas",
+	"appName": "Tabla didactica de idiomas",
 	"webDir": "www",
 	"bundledWebRuntime": false
 }

@@ -1,0 +1,22 @@
+<ion-header> 
+  <ion-toolbar color="primary"> 
+  <ion-title>Tabla de idiomas</ion-title> 
+  </ion-toolbar> 
+ </ion-header> 
+<ion-content [fullscreen]="true">
+ 
+
+  <div id="container"> 
+    <ul>
+      <li>
+        <button (click)='idioma("espanol")'> <img src="./../../assets/temas/color.png" alt="" width="100px"></button>
+      </li>
+      <li>
+        <button (click)='idioma("portugues")'>  <img src="./../../assets/temas/numero.png" alt="" width="100px"></button>
+      </li>
+      <li>
+        <button (click)='idioma("ingles")'> <img src="./../../assets/temas/vaca.png" alt="" width="100px"></button>
+      </li>
+      </ul>
+    </div> 
+</ion-content>
