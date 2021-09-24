@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../servicios/auth/auth.service';
 
 @Component({
   selector: 'app-home',
@@ -7,26 +8,27 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  idioma: string;
+  tema: string; 
+  constructor(private router:Router, private authSrv:AuthService) {
+    this.idioma = 'espanol';
+    this.tema='numeros';
+  }
+ 
 
-  constructor(private router:Router) {}
 
+  CambiarTema(num:string){
+    this.tema= num;
+  }
 
-  idioma(idioma:string){ 
-    switch (idioma) {
-      case 'espanol':
-        this.router.navigate(['espanol']);
-        break;
-        case 'portugues':
-          this.router.navigate(['portugues']);
-          break;
-          case 'ingles':
-            this.router.navigate(['ingles']);
-            break;
-    
-      default:
-        this.router.navigate(['home']);
-        break;
-    }
+  CambiarIdioma(idioma:string){
+    this.idioma= idioma;
+  }
+
+  cerrarSesion(){
+    this.authSrv.LogOut().then(()=>
+      this.router.navigate(['login'])
+    );
   }
 
 }

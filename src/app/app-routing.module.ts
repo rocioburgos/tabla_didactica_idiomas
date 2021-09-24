@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { EspanolComponent } from './espanol/espanol.component';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router'; 
 import { UsuarioActivoGuard } from './guards/usuario-activo/usuario-activo.guard';
-import { InglesComponent } from './ingles/ingles.component';
-import { LoginComponent } from './login/login.component';
-import { PortuguesComponent } from './portugues/portugues.component';
+ 
+import { LoginComponent } from './login/login.component'; 
 
 const routes: Routes = [
   {
@@ -20,19 +18,7 @@ const routes: Routes = [
   {
     path:'login',
     component: LoginComponent
-  } ,
-  {
-    path:'espanol',
-    component:EspanolComponent
-  },
-  {
-    path:'portugues',
-    component:PortuguesComponent
-  },
-  {
-    path:'ingles',
-    component:InglesComponent
-  },
+  } , 
   {
     path: '',
     redirectTo: 'home',

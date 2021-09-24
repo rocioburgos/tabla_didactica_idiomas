@@ -7,13 +7,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
-import { AngularFireModule } from "@angular/fire/compat";  
-import { NavbarComponent } from './navbar/navbar.component';
+import { AngularFireModule } from "@angular/fire/compat";   
 @NgModule({
   declarations: [
       AppComponent, 
-      LoginComponent ,
-      NavbarComponent
+      LoginComponent  
     ],
   entryComponents: [],
   imports: [

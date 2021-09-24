@@ -1,23 +1,39 @@
-<ion-header> 
-  <ion-toolbar color="primary"> 
-  <ion-title>Tabla de idiomas</ion-title> 
-  </ion-toolbar> 
- </ion-header> 
-<ion-content [fullscreen]="true">
  
+<div *ngIf='tema == "numeros"'>
+  <div *ngFor=" let item of numeros ">
+      <ion-card>
+          <ion-card-header>
+              <img src="{{item.imagen}}" width="50px">
+          </ion-card-header>
+          <ion-card-content>
+              <audio preload="none" controls src="{{item.sonido}}"></audio>
+          </ion-card-content>
+      </ion-card>
+  </div>
+</div>
 
-  <div id="container"> 
+<div *ngIf='tema == "colores"'>
+  <div *ngFor=" let item of colores ">
+      <ion-card>
+          <ion-card-header>
+              <img src="{{item.imagen}}" width="50px">
+          </ion-card-header>
+          <ion-card-content>
+              <audio preload="none" controls src="{{item.sonido}}"></audio>
+          </ion-card-content>
+      </ion-card>
+  </div>
+</div>
 
-    <ul>
-      <li>
-        <button > <img src="./../../assets/temas/color.png"  width="100px"></button>
-      </li>
-      <li>
-        <button >  <img src="./../../assets/temas/numero.png"   width="100px"></button>
-      </li>
-      <li>
-        <button > <img src="./../../assets/temas/vaca.png"   width="100px"></button>
-      </li>
-      </ul>
-    </div> 
-</ion-content>
+<div *ngIf='tema == "animales"'>
+  <div *ngFor=" let item of animales ">
+      <ion-card>
+          <ion-card-header>
+              <img src="{{item.imagen}}" width="50px">
+          </ion-card-header>
+          <ion-card-content>
+              <audio preload="none" controls src="{{item.sonido}}"></audio>
+          </ion-card-content>
+      </ion-card>
+  </div>
+</div>
